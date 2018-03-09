@@ -5,20 +5,16 @@ public class Aplicacao {
 
 	public static void main(String[] args) {
 		
-		Pessoa p1 = new Pessoa();
-		p1.nome = "José";
+		Matematica m1 = new Matematica();
+		int soma = m1.somar(3, 5);
+		//System.out.println(soma);
 		
-		Pessoa p2 = new Pessoa();
-		p2.nome = "Maria";
+		Matematica m2 = new Matematica();
+		int soma2 = m2.somar(10, 5, 9);
+		//System.out.println(soma2);
 		
-		p1.receber(5);
-		p1.receber(7);
-		
-		p1.dar(2, p2);
-		
-		p2.dar(1, p1);
-		
-		System.out.println(p1.nome + " => " + p1.numFigurinhas);
-		System.out.println(p2.nome + " => " + p2.numFigurinhas);
+		Matematica m3 = new Matematica();
+		int soma3 = m3.somar(16, 9);
+		//System.out.println(soma3);
 	}
 }
