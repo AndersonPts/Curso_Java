@@ -1,0 +1,18 @@
+SELECT DISTINCT
+    operacao,
+    uf,
+    bras,
+    id_falha_sicaweb,
+    classificacao type,
+    qtd_atual,
+    media,
+    desvio_percentual,
+    executar_operacao,
+    node,
+    summary,
+    eventtime,
+    agrupamento,
+    domain,
+    summary||'-'||node||' - Quantidade: '|| qtd_atual|| '- Desvio percentual:'|| desvio_percentual AS alertykey
+
+               
